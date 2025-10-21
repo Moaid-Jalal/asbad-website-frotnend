@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "step": "Step",
+      "title": "Into a New Digital",
+      "dimension": "Dimension",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae.",
+      "cta": "BUILD YOUR WORLD"
+    }
+  },
+  "footer": {
+    "description": "We're a team of professionals in trade and consulting, providing strategic solutions that empower businesses.",
+    "about": "ABOUT",
+    "services": "SERVICES",
+    "partners": "PARTNERS",
+    "mission": "OUR MISSION",
+    "contactUs": "CONTACT US",
+    "faq": "F.A.Q",
+    "sitemap": "SITEMAP",
+    "conditions": "CONDITIONS",
+    "license": "LICENSE",
+    "socialize": "SOCIALIZE WITH HYDRA",
+    "cta": "BUILD YOUR WORLD",
+    "copyright": "CENTRADE L.L.C-FZ. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team"
+  }
+}
