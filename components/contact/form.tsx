@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import {
   ContactFormData,
   ContactFormResponse,
@@ -10,6 +11,8 @@ import {
 } from '@/lib/api';
 
 export default function ContactForm() {
+  const t = useTranslations('contact.form');
+
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
@@ -65,7 +68,7 @@ export default function ContactForm() {
     } catch (error) {
       setSubmitResult({
         success: false,
-        message: 'حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.'
+        message: t('error')
       });
     } finally {
       setIsLoading(false);
@@ -83,7 +86,7 @@ export default function ContactForm() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Name"
+                  placeholder={t('name')}
                   className="w-full text-black h-12 px-4 border-2 border-black rounded-md focus:outline-none focus:border-red-500"
                   required
                   disabled={isLoading}
@@ -97,7 +100,7 @@ export default function ContactForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Email"
+                  placeholder={t('email')}
                   className="w-full text-black h-12 px-4 border-2 border-black rounded-md focus:outline-none focus:border-red-500"
                   required
                   disabled={isLoading}
@@ -111,7 +114,7 @@ export default function ContactForm() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Subject"
+                  placeholder={t('subject')}
                   className="w-full text-black h-12 px-4 border-2 border-black rounded-md focus:outline-none focus:border-red-500"
                   required
                   disabled={isLoading}
@@ -124,7 +127,7 @@ export default function ContactForm() {
                   name="note"
                   value={formData.note}
                   onChange={handleChange}
-                  placeholder="Tell us something"
+                  placeholder={t('note')}
                   rows={5}
                   className="w-full text-black px-4 py-3 border-2 border-black rounded-md resize-none focus:outline-none focus:border-red-500"
                   required
@@ -162,7 +165,7 @@ export default function ContactForm() {
                     : 'bg-red-600 hover:bg-red-700 text-white hover:scale-105'
                 }`}
             >
-                {isLoading ? 'submitting...' : 'Send'}
+                {isLoading ? t('submitting') : t('submit')}
             </button>
         </div>
       </form>

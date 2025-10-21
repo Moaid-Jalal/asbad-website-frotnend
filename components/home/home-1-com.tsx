@@ -1,11 +1,12 @@
 'use client';
 
 import Image from "next/image"
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export const HomeFirstCom = () => {
     const t = useTranslations('home.hero');
-    
+    const locale = useLocale();
+
     return (
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:flex items-center justify-center gap-16">
         <div className="flex-1 max-w-2xl px-8">
@@ -34,7 +35,7 @@ export const HomeFirstCom = () => {
                 {t('cta')}
               </button>
               <svg
-                className="cursor-pointer w-10 h-10 text-black transition-transform duration-300 hover:translate-x-2"
+                className={`cursor-pointer w-10 h-10 text-black transition-transform duration-300 hover:translate-x-2 ${locale === 'ar' ? 'rotate-180 hover:-translate-x-2' : 'hover:translate-x-2'}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -43,7 +44,7 @@ export const HomeFirstCom = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  d={locale === 'ar' ? 'M7 16l-4-4m0 0l4-4m-4 4h18' : 'M17 8l4 4m0 0l-4 4m4-4H3'}
                 />
               </svg>
             </div>

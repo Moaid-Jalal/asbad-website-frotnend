@@ -1,6 +1,11 @@
+'use client';
+
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export const ContactSecondCom = () => {
+    const t = useTranslations('contact.info');
+
     return (
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 mb-16 mt-24 md:mt-42">
             <div className="max-w-6xl mx-auto">
@@ -15,8 +20,8 @@ export const ContactSecondCom = () => {
                             />
                         </div>
                         <div className="flex flex-col">
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Pay Us a Visit</h3>
-                            <p className="text-gray-600">Union St, Seattle, WA 98101, United States</p>
+                            <h3 className="text-2xl font-semibold text-gray-900 mb-2">{t('visit.title')}</h3>
+                            <p className="text-gray-600">{t('visit.address')}</p>
                         </div>
                         {/* Vertical red border - hidden on mobile, visible on md+ screens */}
                         <div className="hidden md:block absolute -right-6 top-0  h-full bg-red-600 w-[2px]"></div>
@@ -32,8 +37,8 @@ export const ContactSecondCom = () => {
                             />
                         </div>
                         <div className="flex flex-col">
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Give Us a Call</h3>
-                            <p className="text-gray-600">(110) 1111-1010</p>
+                            <h3 className="text-2xl font-semibold text-gray-900 mb-2">{t('call.title')}</h3>
+                            <p className="text-gray-600">{t('call.phone')}</p>
                         </div>
                         {/* Vertical red border - hidden on mobile, visible on md+ screens */}
                         <div className="hidden md:block absolute -right-6 top-0 h-full bg-red-600 w-[2px]"></div>
@@ -49,8 +54,8 @@ export const ContactSecondCom = () => {
                             />
                         </div>
                         <div className="flex flex-col">
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Send Us a Message</h3>
-                            <p className="text-gray-600">Contact@HydraVTech.com</p>
+                            <h3 className="text-2xl font-semibold text-gray-900 mb-2">{t('message.title')}</h3>
+                            <p className="text-gray-600">{t('message.email')}</p>
                         </div>
                     </div>
                 </div>

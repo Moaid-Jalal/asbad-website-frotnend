@@ -14,6 +14,57 @@
       "dimension": "Dimension",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae.",
       "cta": "BUILD YOUR WORLD"
+    },
+    "company": {
+      "title": "Company Snapshot",
+      "subtitle": "A quick look at who we are and what we do.",
+      "description": "Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae."
+    },
+    "about": {
+      "title": "ABOUT",
+      "paragraph1": "At CENTRADE L.L.C-FZ, we believe in transforming challenges into opportunities. Our consulting approach focuses on delivering practical, data-driven insights that create",
+      "paragraph2": "At CENTRADE L.L.C-FZ, we believe in transforming challenges into opportunities. Our consulting approach focuses on delivering practical, data-driven insights that create",
+      "cta": "BUILD YOUR WORLD"
+    },
+    "services": {
+      "title": "WHY CHOOSE OUR",
+      "subtitle": "SERVICES?",
+      "description": "Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae."
+    },
+    "expertise": {
+      "title": "OUR EXPERTISE",
+      "description1": "At CENTRADE L.L.C-FZ, we bring together global experience and specialized knowledge to deliver practical business solutions that drive measurable results.",
+      "description2": "Our multidisciplinary team of consultants combines strategic insight with deep industry understanding, ensuring that every client receives tailored, effective solutions.",
+      "description3": "We focus on precision, performance, and professionalism — guiding businesses through complex markets with clarity and confidence. From trade and logistics to hospitality and management consulting, our expertise empowers organizations to achieve sustainable growth and operational excellence."
+    },
+    "features": {
+      "lightning": {
+        "title": "Lightning Fast",
+        "description": "Experience blazing-fast performance with our optimized solutions that deliver results in record time."
+      },
+      "quality": {
+        "title": "Quality Assured",
+        "description": "Every project undergoes rigorous quality checks to ensure exceptional standards and client satisfaction."
+      },
+      "support": {
+        "title": "Expert Support",
+        "description": "Get comprehensive support from our team of experts who are dedicated to your success every step."
+      },
+      "cta": "BUILD YOUR WORLD"
+    },
+    "partners": {
+      "title": "Partners",
+      "subtitle1": "Most calendars are designed for teams.",
+      "subtitle2": "Slate is designed for freelancers"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "subtitle": "Transforming challenges into opportunities",
+      "description": "At CENTRADE L.L.C-FZ, our mission is to empower businesses through smart trade strategies and specialized consulting. We help clients streamline operations, strengthen market presence, and achieve sustainable growth through innovation and expertise."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be a leading force in business consultancy and global trade — recognized for transforming ideas into impact and challenges into opportunities."
     }
   },
   "footer": {
@@ -32,7 +83,31 @@
     "copyright": "CENTRADE L.L.C-FZ. All rights reserved."
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Get in touch with our team"
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you. Let's start something amazing together.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "note": "Tell us something",
+      "submit": "Send",
+      "submitting": "submitting...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "visit": {
+        "title": "Pay Us a Visit",
+        "address": "Union St, Seattle, WA 98101, United States"
+      },
+      "call": {
+        "title": "Give Us a Call",
+        "phone": "(110) 1111-1010"
+      },
+      "message": {
+        "title": "Send Us a Message",
+        "email": "Contact@HydraVTech.com"
+      }
+    }
   }
 }
